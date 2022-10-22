@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Demo1" xml:space="preserve">
+    <value>&lt;!-- 
+Invoice dynamically rendered into html using handlebars and converted into pdf
+using chrome-pdf recipe. The styles are extracted into separate asset for 
+better readability and later reuse.
+
+Data to this sample are mocked at the design time and should be filled on the 
+incoming API request.
+!--&gt;
+
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type"&gt;
+        &lt;style&gt;
+            .invoice-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 10px;
+    line-height: 18px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+.invoice-box table td h2 {
+   color: #FF4612;
+}
+.invoice-box  table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.invoice-box  table tr td:nth-child(1) {
+    text-align: left;
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 10px;
+}
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+.invoice-box table tr.information td {
+   font-size: 14px;
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color: #FF4612;
+     padding-top: 10px;
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+.invoice-box table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item td p {
+    text-align: justify;
+}
+
+.invoice-box table tr.subitem td p {
+     font-size: 10px;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+.invoice-box table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="invoice-box"&gt;
+        &lt;table cellpadding="0" cellspacing="0"&gt;
+            &lt;tr class="top"&gt;
+                &lt;td colspan="4"&gt;
+                    &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;td class="title"&gt;
+                                &lt;img src="http://www.auxilia.cc/img/auxilia.png" alt="l" width="60px" /&gt;
+                            &lt;/td&gt;
+                            &lt;td style="text-align:right"&gt;
+                               &lt;h2&gt; CARTA DE GARANTÍA &lt;/h1&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+             &lt;tr class="information"&gt;
+                &lt;td width="20%"&gt;
+                    Para
+                &lt;/td&gt;
+                &lt;td width="30%"&gt;
+                    : {{Proveedor}}
+                &lt;/td&gt;
+                &lt;td width="20%"&gt;
+                    De
+                &lt;/td&gt;
+                &lt;td width="30%"&gt;
+                    : Auxilia Asistencia S.A.
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Área
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : Operaciones
+                &lt;/td&gt;
+                &lt;td&gt;
+                    Área
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : Asistencia Médica
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Asunto
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : Garantía de gastos
+                &lt;/td&gt;
+                &lt;td&gt;
+                    Fecha
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : {{Fecha}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+               &lt;tr class="information"&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    Teléfono
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : +56 2 431 1210
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr class="heading "&gt;
+                &lt;td colspan="4"&gt;
+                    Referencia:  {{CodigoExpediente}}  {{NombrePaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+
+            &lt;tr class="item information"&gt;
+                &lt;td colspan="4"&gt;
+                    &lt;p&gt;
+                        {{TipoCuerpo}}
+                    &lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Nombre
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : {{NombrePaciente}}
+                &lt;/td&gt;
+                &lt;td&gt;
+                    RUT
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : {{RutPaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Fecha Nacimiento
+                &lt;/td&gt;
+                &lt;td colspan="3"&gt;
+                   : {{FechaNacimiento}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+               
+                &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Dirección
+                &lt;/td&gt;
+                &lt;td colspan="3"&gt;
+                   : {{DireccionPaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Observaciones Dirección
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : {{ObservacionesDireccionPaciente}}
+                &lt;/td&gt;
+                 &lt;td&gt;
+                    Mail
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : {{MailPaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Ciudad
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : {{CiudadDireccionPaciente}}
+                &lt;/td&gt;
+                &lt;td&gt;
+                    País
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : {{PaisPaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+             &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Teléfono Fijo
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : {{TelefonoPaciente}}
+                &lt;/td&gt;
+                &lt;td&gt;
+                    Teléfono Móvil
+                &lt;/td&gt;
+                &lt;td&gt;
+                    : {{CelularPaciente}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+              
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Síntomas
+                &lt;/td&gt;
+                &lt;td colspan="3"&gt;
+                   : {{Sintomas}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+          
+            &lt;tr class="heading "&gt;
+                &lt;td colspan="4"&gt;
+                    Datos Facturación
+                &lt;/td&gt;
+            &lt;/tr&gt;
+                &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Nombre
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : Auxilia Club Asistencia S.A.
+                &lt;/td&gt;
+                 &lt;td&gt;
+                    RUT
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : 77.078.150-7
+                &lt;/td&gt;
+            &lt;/tr&gt;
+               
+                &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Giro
+                &lt;/td&gt;
+                &lt;td colspan="3"&gt;
+                   : Prestación De Servicios De Asistencia A Personas Y Empresas
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="information"&gt;
+                &lt;td&gt;
+                    Dirección
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : Las Urbinas 68, Providencia. Santiago de Chile
+                &lt;/td&gt;
+                 &lt;td&gt;
+                    Teléfono
+                &lt;/td&gt;
+                &lt;td&gt;
+                   : +56 2 431 1210
+                &lt;/td&gt;
+            &lt;/tr&gt;
+               
+             &lt;tr class="item information"&gt;
+                &lt;td colspan="4"&gt;
+                    &lt;p&gt;
+                        Finalmente quedamos a la espera del reporte médico y de los costos asociados a dicha atención.
+                        Esperando que esta información sea de utilidad,
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Atentamente,
+                    &lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td colspan="4"&gt;
+                   &lt;table&gt;
+                      
+                           &lt;tr&gt;
+                                &lt;td width="60px"&gt;
+                                    &lt;img src="http://www.auxilia.cc/img/auxilia.png" alt="l" width="60px" /&gt;
+                                &lt;/td&gt;
+                                &lt;td colspan="3"&gt;
+                                    {{NombreEjecutivo}} &lt;/br&gt;
+                                    asistenciamedica@auxilia.cl&lt;/br&gt;
+                                    (+56) 2 431 1210
+                                &lt;/td&gt;
+                           &lt;/tr&gt;
+                       
+                   &lt;/table&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+             &lt;tr class="subitem"&gt;
+                &lt;td colspan="4"&gt;
+                    &lt;p&gt;
+                        Auxilia Club Asistencia informa que cualquier costo adicional al tope señalado expresamente en este documento de primera garantía, no podrá ser cobrado o facturado bajo ninguna circunstancia a nuestra compañía, si no existe autorización previa por escrito (fax o email) de dicho costo adicional a la primera garantía.
+                        Auxilia Club Asistencia sólo realiza garantías de pagos en forma escrita en modalidad de email y/o fax y nunca vía telefónica. Si no existe documentación sobre dichas garantías, Auxilia Club Asistencia no asumirá bajo ninguna circunstancia pagos adicionales de cualquier tipo. 
+                    &lt;/p&gt;
+                   
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="Json1" xml:space="preserve">
+    <value>{
+    "number": "123",
+    "seller": {
+        "name": "Next Step Webs, Inc.",
+        "road": "12345 Sunny Road",
+        "country": "Sunnyville, TX 12345"
+    },
+    "buyer": {
+        "name": "Sofia Calderon",
+        "road": "16 Johnson Road",
+        "country": "Paris, France 8060"
+    },
+    "items": [{
+        "name": "Website design",
+        "price": 300
+    }]
+}</value>
+  </data>
+</root>

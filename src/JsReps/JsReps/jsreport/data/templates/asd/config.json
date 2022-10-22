@@ -1,0 +1,14 @@
+{
+    "shortid": "rJO_QEH6X",
+    "name": "asd",
+    "recipe": "chrome-pdf",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": true
+    },
+    "modificationDate": {
+        "$$date": 1541911424440
+    },
+    "_id": "MHsqvWlYkLUKe6ZX",
+    "$entitySet": "templates"
+}

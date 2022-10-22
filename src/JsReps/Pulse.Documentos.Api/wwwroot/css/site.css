@@ -1,0 +1,45 @@
+﻿a.nav-link.active > span > svg {
+    transform: scale(1.5);
+}
+
+[data-ma-theme=red] a.nav-link.active > span > svg {fill: #ff6b68}
+[data-ma-theme=purple] a.nav-link.active > span > svg {
+    fill: #d066e2
+}
+
+[data-ma-theme=indigo] a.nav-link.active > span > svg {
+    fill: #3F51B5
+}
+
+[data-ma-theme=blue] a.nav-link.active > span > svg {
+    fill: #2196F3
+}
+
+[data-ma-theme=cyan] a.nav-link.active > span > svg {
+    fill: #00BCD4
+}
+
+
+[data-ma-theme=teal] a.nav-link.active > span > svg {
+    fill: #39bbb0
+}
+
+
+[data-ma-theme=green] a.nav-link.active > span > svg {
+    fill: #32c787
+}
+
+[data-ma-theme=brown] a.nav-link.active > span > svg {
+    fill: #795548
+}
+
+
+
+[data-ma-theme=orange] a.nav-link.active > span > svg {
+    fill: #ff4612
+}
+
+
+[data-ma-theme=blue-grey] a.nav-link.active > span > svg {
+    fill: #607D8B
+}
